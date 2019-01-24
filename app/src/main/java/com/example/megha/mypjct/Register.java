@@ -1,6 +1,7 @@
 package com.example.megha.mypjct;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 public class Register extends AppCompatActivity {
 EditText n,a,co,pl,s,p,c;
     Button r,A;
-    String passw,conpass;
+    String passw,conpass,name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,16 +35,21 @@ EditText n,a,co,pl,s,p,c;
                 p.getText().toString();
                 s.getText().toString();
                passw= p.getText().toString();
+                name= n.getText().toString();
                 conpass=c.getText().toString();
                 if (passw.equals(conpass))
                 {
+                    SharedPreferences.Editor editor=getSharedPreferences("login",MODE_PRIVATE).edit();
+                    editor.putString("username",name);
+                    editor.putString("password",passw);
+                    editor.apply();
                     Intent a= new Intent(getApplicationContext(),Welcome.class);
                     startActivity(a);
                     Toast.makeText(getApplicationContext(),"Welcome",Toast.LENGTH_LONG).show();
                 }
                else
                 {
-                    Toast.makeText(getApplicationContext(),"password And conform pasword does't match",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"password And conform password does't match",Toast.LENGTH_LONG).show();
                 }
 
 
@@ -53,6 +59,8 @@ EditText n,a,co,pl,s,p,c;
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(getApplicationContext(),student.class);
+               i.putExtra("username",name);
+                i.putExtra("password",passw);
                 startActivity(i);
             }
         });

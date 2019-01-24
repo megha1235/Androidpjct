@@ -27,6 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="LOGIN"
+        android:background="@color/loginbutton"
+        android:textSize="22dp"
         android:id="@+id/loginb"/>
     <Button
         android:layout_width="match_parent"

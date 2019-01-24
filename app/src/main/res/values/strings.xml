@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mypjct</string>
+    <string-array name="degreelist">
+        <item >Bsc computerApplication</item>
+        <item> bca</item>
+
+
+    </string-array>
 </resources>

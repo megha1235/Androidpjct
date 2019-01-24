@@ -1,3 +1,6 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
@@ -68,6 +71,18 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:id="@+id/cpass"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22dp"
+        android:text="Mypjct" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="22dp"
+        android:entries="@array/degreelist">
+
+    </Spinner>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,3 +95,4 @@
         android:id="@+id/ald"/>
 
 </LinearLayout>
+</ScrollView>
