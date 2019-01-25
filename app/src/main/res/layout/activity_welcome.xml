@@ -9,6 +9,35 @@
         android:text="Welcome"
         android:textSize="78dp"
         android:background="#D00"/>
+    <ImageView
+        android:id="@+id/ad"
+        android:src="@drawable/additionpng"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logo"/>
+    <ImageView
+        android:id="@+id/subb"
+        android:src="@drawable/images"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/sub"/>
+    <ImageView
+        android:id="@+id/multi"
+        android:src="@drawable/download"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mult"/>
+    <ImageView
+        android:src="@drawable/m"
+        android:id="@+id/divi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/div"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,4 +45,11 @@
         android:text="Logout"
         android:textSize="22dp"
         android:id="@+id/logout"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="View all"
+        android:textSize="22dp"
+        android:id="@+id/va"/>
 </LinearLayout>

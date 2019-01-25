@@ -16,7 +16,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register" />
-        <activity android:name=".Welcome"></activity>
+        <activity android:name=".Welcome" />
+        <activity android:name=".add1" />
+        <activity android:name=".sub1" />
+        <activity android:name=".mult1" />
+        <activity android:name=".div1" />
+        <activity android:name=".empty"></activity>
     </application>
 
 </manifest>
